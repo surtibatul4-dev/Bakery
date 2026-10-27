@@ -1,0 +1,356 @@
+/* ==========================================================================
+   CREME & CRUMBS — COMPREHENSIVE RESPONSIVE STYLES
+   Mobile, Tablet, and Laptop Optimized Layouts
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Large Desktop / Laptop (max-width: 1200px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+  .hero-title {
+    font-size: 3.1rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+    gap: 30px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Medium Laptop & Tablet Landscape (max-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  .header-container {
+    height: 72px;
+  }
+  
+  .nav-links {
+    gap: 18px;
+  }
+  
+  .nav-link {
+    font-size: 0.88rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-stats-row {
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .hero-visual {
+    max-width: 620px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-main-img {
+    height: 400px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-content .section-title,
+  .about-content .section-subtitle {
+    text-align: center;
+  }
+
+  .about-lead-text,
+  .about-story-text {
+    text-align: center;
+  }
+
+  .about-checklist {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Tablet Portrait & Large Phones (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .top-bar-content {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .top-bar-contact {
+    display: none;
+  }
+
+  .nav-links {
+    display: none; /* Handled via mobile drawer */
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .header-actions .btn-primary {
+    display: none; /* Moved into mobile drawer */
+  }
+
+  .hero-section {
+    padding: 40px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-main-img {
+    height: 320px;
+  }
+
+  .floating-glass-card {
+    position: static;
+    margin-top: 16px;
+    background: #FFFFFF;
+  }
+
+  .hero-accent-circle {
+    width: 90px;
+    height: 90px;
+    top: -12px;
+    right: -12px;
+  }
+
+  .hero-accent-circle span:last-child {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order-box {
+    padding: 28px 20px;
+  }
+
+  .order-form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-card {
+    grid-template-columns: 1fr;
+    max-height: 85vh;
+  }
+
+  .modal-img-col {
+    height: 240px;
+    min-height: auto;
+  }
+
+  .modal-content-col {
+    padding: 24px 20px;
+  }
+
+  .cart-drawer {
+    max-width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-social-strip {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Small Mobile Phones (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .logo-title {
+    font-size: 1.4rem;
+  }
+
+  .logo-tagline {
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-secondary {
+    width: 100%;
+  }
+
+  .hero-stats-row {
+    flex-wrap: wrap;
+    gap: 20px 28px;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .filter-tabs {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+
+  .about-checklist {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 24px 18px;
+  }
+
+  .location-footer-note {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 18px;
+  }
+
+  .toast-notice {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .help-channels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chatbot-window {
+    bottom: 80px;
+    right: 12px;
+    left: 12px;
+    width: auto;
+    max-width: none;
+    height: 470px;
+  }
+
+  .chatbot-trigger-btn {
+    bottom: 16px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+/* Tablet overrides for help channels */
+@media screen and (max-width: 1024px) {
+  .help-channels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
